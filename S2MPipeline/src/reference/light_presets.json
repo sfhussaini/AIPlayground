@@ -1,0 +1,50 @@
+{
+  "pre_dawn": {
+    "source": "faint glow before sunrise",
+    "direction": "low on the horizon",
+    "quality": "soft and diffused",
+    "color_temp": "cool blue"
+  },
+  "dawn": {
+    "source": "early morning sun",
+    "direction": "low angle from the side",
+    "quality": "soft",
+    "color_temp": "warm golden"
+  },
+  "morning": {
+    "source": "morning sun",
+    "direction": "medium angle from the side",
+    "quality": "soft",
+    "color_temp": "warm"
+  },
+  "noon": {
+    "source": "midday sun",
+    "direction": "overhead",
+    "quality": "bright and hard",
+    "color_temp": "neutral white"
+  },
+  "afternoon": {
+    "source": "afternoon sun",
+    "direction": "high angle from the side",
+    "quality": "bright",
+    "color_temp": "warm neutral"
+  },
+  "golden_hour": {
+    "source": "low golden sun",
+    "direction": "low angle",
+    "quality": "soft and warm",
+    "color_temp": "golden"
+  },
+  "dusk": {
+    "source": "fading sun",
+    "direction": "very low angle",
+    "quality": "soft and dim",
+    "color_temp": "orange to blue"
+  },
+  "night": {
+    "source": "moonlight",
+    "direction": "from above",
+    "quality": "dim",
+    "color_temp": "cool blue"
+  }
+}

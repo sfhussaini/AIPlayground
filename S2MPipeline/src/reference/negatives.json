@@ -1,0 +1,34 @@
+{
+  "still": [
+    "cartoon",
+    "anime",
+    "3D render",
+    "illustration",
+    "text",
+    "watermark",
+    "logo",
+    "extra fingers",
+    "extra limbs",
+    "deformed hands",
+    "distorted face",
+    "different face",
+    "different outfit",
+    "duplicate person",
+    "blurry",
+    "low quality",
+    "oversaturated"
+  ],
+  "video": [
+    "jump cut",
+    "teleport",
+    "morph",
+    "dissolve",
+    "glitch",
+    "stutter",
+    "flicker",
+    "duplicate face",
+    "warped limbs",
+    "extra fingers",
+    "cartoon"
+  ]
+}

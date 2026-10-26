@@ -1,0 +1,20 @@
+{
+  "horizontal": {
+    "left_third": "left third",
+    "center": "center",
+    "right_third": "right third"
+  },
+  "depth": {
+    "foreground": "in the foreground",
+    "midground": "in the midground",
+    "background": "in the background"
+  },
+  "facing": {
+    "toward_camera": "facing the camera",
+    "away_from_camera": "facing away from the camera",
+    "left": "facing left",
+    "right": "facing right",
+    "three_quarter_left": "facing three-quarter left",
+    "three_quarter_right": "facing three-quarter right"
+  }
+}

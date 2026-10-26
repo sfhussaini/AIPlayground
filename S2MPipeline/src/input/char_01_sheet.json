@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "characters": [
+    {
+      "character_id": "char_01",
+      "name": "Woman",
+      "subject": "woman",
+      "sheet_file": "char_01_sheet.png",
+      "identity": {
+        "age_range": "adult",
+        "build": "curvy",
+        "face_shape": "oval",
+        "skin_tone": "tan",
+        "eye_color": "dark_brown",
+        "hair": {
+          "length": "short",
+          "style": "bun",
+          "color": "black"
+        },
+        "facial_hair": "none",
+        "facial_marks": [
+          "red_bindi_on_forehead"
+        ],
+        "accessories": []
+      },
+      "identity_lock": "the woman has an oval face, tan skin, dark brown eyes and short black hair in a bun, with red_bindi_on_forehead",
+      "wardrobe": [
+        {
+          "wardrobe_id": "wd_01",
+          "text": "bare_chest",
+          "garments": [
+            {
+              "type": "sari",
+              "color": "dark_green_grey",
+              "pattern": "solid"
+            }
+          ],
+          "footwear": "unseen",
+          "states": {
+            "default": "worn as shown in the reference sheet"
+          }
+        }
+      ],
+      "sheet_check": {
+        "full_body": true,
+        "plain_background": false,
+        "views_visible": [
+          "front",
+          "side"
+        ],
+        "issues": []
+      },
+      "review": {
+        "source": "vision",
+        "reviewed": false,
+        "uncertain_fields": []
+      }
+    }
+  ]
+}

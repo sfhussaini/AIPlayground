@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "characters": [
+    {
+      "character_id": "char_01",
+      "name": "Meera",
+      "subject": "woman",
+      "sheet_file": "char_01_sheet.png",
+      "identity": {
+        "age_range": "adult",
+        "build": "slim",
+        "face_shape": "oval",
+        "skin_tone": "tan",
+        "eye_color": "dark_brown",
+        "hair": { "length": "mid_back", "style": "straight", "color": "light_brown" },
+        "facial_hair": "none",
+        "facial_marks": [],
+        "accessories": []
+      },
+      "identity_lock": "the woman has an oval face, tan skin, dark brown eyes and straight light brown hair falling to mid-back",
+      "wardrobe": [
+        {
+          "wardrobe_id": "wd_01",
+          "text": "a sleeveless floral halter dress in orange, pink and teal, knee length, barefoot",
+          "garments": [
+            { "type": "halter dress", "color": "orange pink teal", "pattern": "floral" }
+          ],
+          "footwear": "barefoot",
+          "states": {
+            "default": "the dress is clean and dry",
+            "muddy_legs": "the legs and hem are spattered with mud",
+            "damp": "the dress is slightly damp with sweat at the neckline"
+          }
+        }
+      ],
+      "sheet_check": {
+        "full_body": true,
+        "plain_background": true,
+        "views_visible": ["front"],
+        "issues": []
+      },
+      "review": {
+        "source": "vision",
+        "reviewed": false,
+        "uncertain_fields": ["identity.eye_color"]
+      }
+    }
+  ]
+}

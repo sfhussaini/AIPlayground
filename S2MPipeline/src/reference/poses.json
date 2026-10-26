@@ -1,0 +1,306 @@
+{
+  "poses": [
+    {
+      "pose_id": "pose_stand",
+      "label": "standing",
+      "text": "standing upright with arms relaxed at the sides and legs straight"
+    },
+    {
+      "pose_id": "pose_walk",
+      "label": "walking",
+      "text": "walking forward with one foot ahead of the other and arms swinging gently"
+    },
+    {
+      "pose_id": "pose_bend_work",
+      "label": "bending to work",
+      "text": "bent forward at the waist with knees slightly bent and both hands low, working at ground level"
+    },
+    {
+      "pose_id": "pose_wipe_brow",
+      "label": "wiping the brow",
+      "text": "standing with one hand raised to the forehead, wiping the brow, the other arm relaxed"
+    },
+    {
+      "pose_id": "pose_sit",
+      "label": "sitting",
+      "text": "sitting cross-legged on the ground with a straight back and hands resting on the lap"
+    },
+    {
+      "pose_id": "pose_hold_prop",
+      "label": "holding an object",
+      "text": "holding an object in both hands in front of the body with elbows bent"
+    },
+    {
+      "pose_id": "pose_eat",
+      "label": "eating",
+      "text": "sitting, one hand raised bringing food to the mouth, the other hand holding a container on the lap"
+    },
+    {
+      "pose_id": "pose_listen",
+      "label": "listening",
+      "text": "sitting still with the head tilted slightly to one side and hands resting calmly"
+    },
+    {
+      "pose_id": "pose_reach",
+      "label": "reaching forward",
+      "text": "reaching forward with one arm extended and the other arm relaxed"
+    },
+    {
+      "pose_id": "pose_stand_work",
+      "label": "standing work",
+      "text": "standing upright with knees slightly bent and hands clasped behind back, looking at the object"
+    },
+    {
+      "pose_id": "pose_sit_work",
+      "label": "sitting work",
+      "text": "sitting at a desk or table with arms crossed over chest and head resting on hands"
+    },
+    {
+      "pose_id": "pose_gymnastic_bow",
+      "label": "gymnastic",
+      "text": "kneeling on hands and toes with one arm extended and other bent back to the side, performing a bend"
+    },
+    {
+      "pose_id": "pose_sleep",
+      "label": "sleeping",
+      "text": "lying down in a prone position with head turned slightly to the side, hands resting on knees"
+    },
+    {
+      "pose_id": "pose_sleeping_stretch",
+      "label": "sleeping stretch",
+      "text": "lying on side with legs straight and arms reaching towards the ceiling, hands interlaced"
+    },
+    {
+      "pose_id": "pose_lift_grip",
+      "label": "lifting grip",
+      "text": "lifting one hand to shoulder height holding a cup or bottle, then lowering to lap"
+    },
+    {
+      "pose_id": "pose_drinking",
+      "label": "drinking",
+      "text": "standing with one hand holding a glass, tilting head back slightly to drink from the glass"
+    },
+    {
+      "pose_id": "pose_sing",
+      "label": "singing",
+      "text": "standing on one foot with arms raised above shoulders in a rhythmic motion"
+    },
+    {
+      "pose_id": "pose_laugh",
+      "label": "laughing",
+      "text": "standing with head tilted slightly back, hands raised to chest in a playful gesture"
+    },
+    {
+      "pose_id": "pose_smile",
+      "label": "smiling",
+      "text": "standing with hands resting on hips or holding a cup close to the mouth, looking directly at the camera"
+    },
+    {
+      "pose_id": "pose_gesture",
+      "label": "gesturing",
+      "text": "standing with one hand raised high in a circular motion, eyes following the motion"
+    },
+    {
+      "pose_id": "pose_wiggle",
+      "label": "wiggling",
+      "text": "standing with both hands making small movements near the neck or shoulders"
+    },
+    {
+      "pose_id": "pose_stare",
+      "label": "staring",
+      "text": "standing still with the head tilted slightly to one side and hands resting calmly"
+    },
+    {
+      "pose_id": "pose_mature_seductive",
+      "label": "mature seductive",
+      "text": "sitting on a high-backed chair with legs crossed at the ankles, hands resting on the lap"
+    },
+    {
+      "pose_id": "pose_mature_smirk",
+      "label": "mature smirk",
+      "text": "standing with head turned to the side, hand raised in a relaxed manner"
+    },
+    {
+      "pose_id": "pose_squat",
+      "label": "squatting",
+      "text": "bending the knees and hips to lower the body toward the ground while keeping the back straight"
+    },
+    {
+      "pose_id": "pose_deep_squat",
+      "label": "deep squat",
+      "text": "lowering the hips until they are well below the level of the knees"
+    },
+    {
+      "pose_id": "pose_crouch",
+      "label": "crouching",
+      "text": "squatting low to the ground in a compact position, often with arms tucked in or forward"
+    },
+    {
+      "pose_id": "pose_missionary",
+      "label": "standing",
+      "text": "lying on back, legs straight, feet near hips"
+    },
+    {
+      "pose_id": "pose_running",
+      "label": "running",
+      "text": "Moving legs forward with arms swinging in a running motion",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_urinate_squat",
+      "label": "urinate",
+      "text": "Crouched in a deep squat position with knees bent outward and torso leaning slightly forward",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_excrete",
+      "label": "excretion",
+      "text": "slumped on backside, hands resting on thighs, legs spread slightly, feet on ground",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_planting",
+      "label": "planting",
+      "text": "Bending forward or downward while holding an object with both hands toward the ground",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_splashing",
+      "label": "splashing",
+      "text": "Arms extended and moving rapidly in a rhythmic motion as if hitting water surface",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_defecate",
+      "label": "defecating",
+      "text": "slumped on backside, hands resting on thighs",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_toilet_sit",
+      "label": "sitting on toilet",
+      "text": "seated on a low seat with knees apart and torso leaning forward over the lap",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_watching",
+      "label": "watching",
+      "text": "Standing still, facing forward with eyes fixed on a point, neutral facial expression",
+      "source": "user"
+    },
+    {
+      "pose_id": "grab_hem",
+      "label": "grabbing_edge",
+      "text": "reaching down with both hands to grasp the bottom edge or hem of the dress"
+    },
+    {
+      "pose_id": "lift_dress",
+      "label": "lifting_fabric",
+      "text": "lifting arms upward while holding the dress, causing the fabric to bunch up toward the chest and head"
+    },
+    {
+      "pose_id": "slide_off",
+      "label": "shoulder_pass",
+      "text": "the dress sliding off the shoulders as the arms move outward or the body moves slightly forward"
+    },
+    {
+      "pose_id": "undressing_motion",
+      "label": "full_sequence",
+      "text": "a continuous motion of grabbing the hem, lifting it over the head, and sliding it off the shoulders"
+    },
+    {
+      "pose_id": "bend_forward_slight",
+      "label": "leaning forward",
+      "text": "bending the upper body forward slightly while maintaining a straight back"
+    },
+    {
+      "pose_id": "bend_forward_deep",
+      "label": "deep bow",
+      "text": "bending deeply at the waist with the head lowered toward the ground"
+    },
+    {
+      "pose_id": "bend_side_left",
+      "label": "leaning left",
+      "text": "tilting and bending the upper body to the left side"
+    },
+    {
+      "pose_id": "bend_side_right",
+      "label": "leaning right",
+      "text": "tilting and bending the upper body to the right side"
+    },
+    {
+      "pose_id": "bend_back_arch",
+      "label": "arching back",
+      "text": "bending the spine backward into a slight arch"
+    },
+    {
+      "pose_id": "bend_crouch",
+      "label": "crouching bend",
+      "text": "bending at the hips and knees to lower the body toward the ground"
+    },
+    {
+      "pose_id": "bend_reach",
+      "label": "reaching forward",
+      "text": "bending forward while extending one or both arms forward as if reaching for something"
+    },
+    {
+      "pose_id": "pose_bending",
+      "label": "bending",
+      "text": "bent knees to plant seedlings",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_bending_down",
+      "label": "bending down",
+      "text": "Plants seedlings in the mud.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_running_toward",
+      "label": "running toward",
+      "text": "Moves quickly to the river bank.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_washing_the_saree",
+      "label": "washing the saree",
+      "text": "Uses water to clean fabric at the edge of the water.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_taking_a_bath",
+      "label": "taking a bath",
+      "text": "Immerses body in water for a full body soak.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_sitting_in_a_squatting_position",
+      "label": "sitting in a squatting position",
+      "text": "Neena sits in a squatting position on the muddy ground.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_lifting_and_washing",
+      "label": "lifting and washing",
+      "text": "Neena lifts her saree and washes it off at the edge of the water.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_taking_a_full_body_bath",
+      "label": "taking a full body bath",
+      "text": "Neena takes a full body bath in the river water.",
+      "source": "user"
+    },
+    {
+      "pose_id": "pose_covered_soil",
+      "label": "covered_soil",
+      "text": "covered in soil",
+      "source": "keyframe"
+    }
+  ],
+  "no_pose": {
+    "pose_id": "pose_none",
+    "label": "nobody",
+    "text": "no person in the frame"
+  }
+}

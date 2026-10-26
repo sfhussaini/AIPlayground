@@ -1,0 +1,32 @@
+{
+  "qwen_keyframe": [
+    "Using the character reference, show the same {subject} in {environment_description}.",
+    "{identity_lock}.",
+    "Wearing {wardrobe_text}.",
+    "{wardrobe_state_text}.",
+    "Framing: {framing_text}.",
+    "Pose: {pose_text}.",
+    "Position: {position_text}.",
+    "Expression: {expression_text}.",
+    "Holding {prop_text}.",
+    "{condition_text}.",
+    "Lighting: {light_text}.",
+    "{style_text}.",
+    "Keep the face, hair, skin tone, body build, outfit, brightness, exposure and color balance identical to the character reference."
+  ],
+  "qwen_scene": [
+    "{style_text}.",
+    "{environment_description}.",
+    "No people in the frame.",
+    "Framing: {framing_text}.",
+    "Lighting: {light_text}."
+  ],
+  "ltx_motion": [
+    "{shot_type} shot, {camera_movement} camera.",
+    "{action_sentence}.",
+    "{secondary_sentence}.",
+    "{ambient_sentence}.",
+    "{style_text}.",
+    "Smooth continuous motion, present tense, chronological action."
+  ]
+}

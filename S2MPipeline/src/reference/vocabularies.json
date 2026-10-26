@@ -1,0 +1,89 @@
+{
+    "shot_type": [
+        "extreme_wide",
+        "wide",
+        "medium_wide",
+        "medium",
+        "medium_close",
+        "close_up",
+        "extreme_close_up"
+    ],
+    "camera_angle": [
+        "eye_level",
+        "low_angle",
+        "high_angle",
+        "over_the_shoulder",
+        "dutch"
+    ],
+    "camera_movement": [
+        "static",
+        "slow_push_in",
+        "slow_pull_out"
+    ],
+    "lens_mm": [
+        24,
+        35,
+        50,
+        85
+    ],
+    "screen_horizontal": [
+        "left_third",
+        "center",
+        "right_third"
+    ],
+    "screen_depth": [
+        "foreground",
+        "midground",
+        "background"
+    ],
+    "facing": [
+        "toward_camera",
+        "away_from_camera",
+        "left",
+        "right",
+        "three_quarter_left",
+        "three_quarter_right"
+    ],
+    "expression": [
+        "neutral",
+        "calm",
+        "focused",
+        "tired",
+        "content",
+        "relieved",
+        "smiling",
+        "worried",
+        "afraid"
+    ],
+    "wetness": [
+        "dry",
+        "damp",
+        "wet",
+        "soaked"
+    ],
+    "mud_level": [
+        "clean",
+        "light",
+        "moderate",
+        "heavy"
+    ],
+    "hair_state": [
+        "as_sheet",
+        "windblown",
+        "wet"
+    ],
+    "time_of_day": [
+        "pre_dawn",
+        "dawn",
+        "morning",
+        "noon",
+        "afternoon",
+        "golden_hour",
+        "dusk",
+        "night"
+    ],
+    "transition_in": [
+        "hard_cut",
+        "continuous_from_previous"
+    ]
+}

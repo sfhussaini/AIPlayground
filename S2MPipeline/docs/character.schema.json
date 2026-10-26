@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "character.schema.json",
+  "title": "Character file (input/character.json)",
+  "description": "Describes the character(s) shown in input/char_XX_sheet.png. Filled by a Vision LLM looking at the sheet, then reviewed by a human. Describe ONLY what is visible. Never guess hidden details. v1 supports exactly one character.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "characters"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": { "$ref": "#/$defs/character" }
+    }
+  },
+  "$defs": {
+    "character": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["character_id", "name", "subject", "sheet_file", "identity", "identity_lock", "wardrobe", "sheet_check", "review"],
+      "properties": {
+        "character_id": {
+          "type": "string",
+          "pattern": "^char_\\d{2}$",
+          "description": "Must match the sheet filename: char_01 -> input/char_01_sheet.png."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "description": "Short first name. A vision model cannot know this: the human supplies it, or use a plain label such as 'the woman'."
+        },
+        "subject": {
+          "enum": ["woman", "man", "girl", "boy", "person"],
+          "description": "Noun used at the start of the identity lock."
+        },
+        "sheet_file": {
+          "type": "string",
+          "pattern": "^char_\\d{2}_sheet\\.png$"
+        },
+        "identity": { "$ref": "#/$defs/identity" },
+        "identity_lock": {
+          "type": "string",
+          "minLength": 40,
+          "maxLength": 300,
+          "description": "ONE sentence, 20-40 words, starting with 'the <subject>'. Must mention face shape, hair (length, style, colour) and skin tone, plus any facial mark. Must not mention clothing, background, pose or expression. Code may regenerate this from the identity fields."
+        },
+        "wardrobe": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": { "$ref": "#/$defs/wardrobe" }
+        },
+        "sheet_check": { "$ref": "#/$defs/sheet_check" },
+        "review": { "$ref": "#/$defs/review" }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["age_range", "build", "face_shape", "skin_tone", "eye_color", "hair", "facial_hair", "facial_marks", "accessories"],
+      "properties": {
+        "age_range": { "enum": ["child", "teen", "young_adult", "adult", "middle_aged", "senior"] },
+        "build": { "enum": ["slim", "average", "athletic", "curvy", "stocky", "heavy"] },
+        "face_shape": { "enum": ["oval", "round", "square", "heart", "long"] },
+        "skin_tone": { "enum": ["fair", "light", "medium", "olive", "tan", "brown", "dark_brown", "deep"] },
+        "eye_color": { "enum": ["black", "dark_brown", "brown", "hazel", "green", "blue", "grey"] },
+        "hair": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["length", "style", "color"],
+          "properties": {
+            "length": { "enum": ["bald", "short", "chin_length", "shoulder_length", "mid_back", "waist_length"] },
+            "style": { "enum": ["straight", "wavy", "curly", "braided", "bun", "ponytail", "tied_back", "other"] },
+            "color": { "enum": ["black", "dark_brown", "brown", "light_brown", "blonde", "red", "grey", "white"] }
+          }
+        },
+        "facial_hair": { "enum": ["none", "stubble", "mustache", "beard"] },
+        "facial_marks": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "type": "string", "maxLength": 40 },
+          "description": "Only marks clearly visible on the sheet (e.g. 'small mole on left cheek'). Empty list if none. Never invent a mark."
+        },
+        "accessories": {
+          "type": "array",
+          "maxItems": 4,
+          "items": { "type": "string", "maxLength": 40 },
+          "description": "Worn items that are part of identity (glasses, earrings, bangles). Not clothing."
+        }
+      }
+    },
+    "wardrobe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wardrobe_id", "text", "garments", "footwear", "states"],
+      "properties": {
+        "wardrobe_id": { "type": "string", "pattern": "^wd_\\d{2}$" },
+        "text": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 200,
+          "description": "One phrase describing the full outfit exactly as seen on the sheet, with colours and patterns."
+        },
+        "garments": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "color", "pattern"],
+            "properties": {
+              "type": { "type": "string", "maxLength": 30 },
+              "color": { "type": "string", "maxLength": 30 },
+              "pattern": { "enum": ["solid", "striped", "floral", "checked", "printed", "other"] }
+            }
+          }
+        },
+        "footwear": {
+          "type": "string",
+          "maxLength": 40,
+          "description": "What is on her feet, or 'barefoot'."
+        },
+        "states": {
+          "type": "object",
+          "required": ["default"],
+          "maxProperties": 5,
+          "propertyNames": { "pattern": "^[a-z][a-z_]*$" },
+          "additionalProperties": { "type": "string", "maxLength": 120 },
+          "description": "Closed list of outfit variants. 'default' is required and equals the sheet look. Extra keys (e.g. sleeves_rolled, muddy_legs, wet) are written by the human, not guessed from the sheet. Stage 5 may only pick from these keys."
+        }
+      }
+    },
+    "sheet_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["full_body", "plain_background", "views_visible", "issues"],
+      "properties": {
+        "full_body": { "type": "boolean", "description": "Head to feet visible." },
+        "plain_background": { "type": "boolean", "description": "Neutral backdrop, no scene elements." },
+        "views_visible": {
+          "type": "array",
+          "items": { "enum": ["front", "side", "back", "three_quarter"] }
+        },
+        "issues": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 80 },
+          "description": "Anything that could hurt identity consistency (harsh light, mud, scene bleed, cropped feet, blur)."
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "reviewed", "uncertain_fields"],
+      "properties": {
+        "source": { "enum": ["vision", "manual"] },
+        "reviewed": {
+          "type": "boolean",
+          "description": "Set to true by a human after checking. Stage 2 should warn, or fail, while false."
+        },
+        "uncertain_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Dotted paths the Vision LLM was unsure about, e.g. 'identity.skin_tone'."
+        }
+      }
+    }
+  }
+}

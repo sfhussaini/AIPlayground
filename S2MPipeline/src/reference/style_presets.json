@@ -1,0 +1,18 @@
+{
+  "photorealistic": {
+    "art_medium_style": "photorealistic cinematic film still, natural light, film grain",
+    "quality_tags":     "shallow depth of field, 35mm film look, natural colors"
+  },
+  "cinematic": {
+    "art_medium_style": "cinematic film still, anamorphic lens, dramatic lighting",
+    "quality_tags":     "shallow depth of field, strong contrast, color graded"
+  },
+  "anime": {
+    "art_medium_style": "anime key visual, studio quality, hand-drawn look",
+    "quality_tags":     "clean line art, vibrant colors, expressive"
+  },
+  "digital_art": {
+    "art_medium_style": "digital painting, concept art, painterly style",
+    "quality_tags":     "loose brushwork, atmospheric, storytelling composition"
+  }
+}

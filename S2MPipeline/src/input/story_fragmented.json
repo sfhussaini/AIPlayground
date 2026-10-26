@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "file": "input\\story.txt",
+    "word_count": 368,
+    "sha1": "265ba14e029ede22df7e3fff4c05a7e8cd597f54"
+  },
+  "environments": [
+    {
+      "name": "rice_paddy_field",
+      "description": "Vast expanse of the rice paddy field with green waters and muddy water.",
+      "ambience": "Soft golden glow from afternoon sun, warm."
+    },
+    {
+      "name": "river_bank",
+      "description": "Nearby river bank where mud is thick and heavy with soil scent.",
+      "ambience": "Cool morning air, wet and cleansing."
+    },
+    {
+      "name": "shallow_water",
+      "description": "Shallow water within the river where standing occurs for bathing.",
+      "ambience": "Cold water rushes over shoulders, clean and safe."
+    }
+  ],
+  "wardrobe_states": [
+    {
+      "state_id": "saree_full",
+      "text": "Bright colors covering body, floral print against skin."
+    },
+    {
+      "state_id": "saree_lifted",
+      "text": "Fabric lifted slowly to reveal body partially."
+    },
+    {
+      "state_id": "saree_waist",
+      "text": "Stripped to waist, upper body exposed."
+    },
+    {
+      "state_id": "naked",
+      "text": "Entire cover removed, skin completely exposed."
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "prop_seedlings",
+      "name": "seedlings",
+      "text": "Seedlings planted in the field that were lost to mud."
+    },
+    {
+      "prop_id": "prop_muddy_soil",
+      "name": "muddy_soil",
+      "text": "Black soil falling onto legs and body during relief."
+    }
+  ],
+  "sequences": [
+    {
+      "sequence_id": "sq_01",
+      "sequence_number": 1,
+      "name": "Field Work & Urge",
+      "summary": "Neena works in the field, feels an urge, and runs to the river.",
+      "scenes": [
+        {
+          "scene_id": "sq_01.sc_01",
+          "scene_number": 1,
+          "name": "rice_paddy_field",
+          "summary": "Neena plants seedlings and experiences physical urges.",
+          "environment_name": "rice_paddy_field",
+          "time_of_day": "afternoon",
+          "characters_present": [
+            "char_01"
+          ],
+          "clips": [
+            {
+              "clip_id": "sq_01.sc_01.c01",
+              "clip_number": 1,
+              "name": "Planting Seedlings",
+              "action": "Neena reaches down into the muddy water to plant her seedlings.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_01.sc_01.c02",
+              "clip_number": 2,
+              "name": "Feeling Urge",
+              "action": "A sudden warmth in her stomach demands to be known as she bends her knees.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_01.sc_01.c03",
+              "clip_number": 3,
+              "name": "Running to River",
+              "action": "She realized that she couldn't stay and ran toward the water, feet sinking into mud.",
+              "person": true,
+              "duration_sec": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sequence_id": "sq_02",
+      "sequence_number": 2,
+      "name": "Relief & Realization",
+      "summary": "Neena relieves herself on the river bank and realizes the mess made.",
+      "scenes": [
+        {
+          "scene_id": "sq_02.sc_01",
+          "scene_number": 1,
+          "name": "river_bank",
+          "summary": "Neena squats to urinate and defecate, then feels the loss of innocence.",
+          "environment_name": "river_bank",
+          "time_of_day": "afternoon",
+          "characters_present": [
+            "char_01"
+          ],
+          "clips": [
+            {
+              "clip_id": "sq_02.sc_01.c01",
+              "clip_number": 1,
+              "name": "Squatting to Urinate",
+              "action": "She lifted her saree and lowered her hips to the ground to urinate.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_02.sc_01.c02",
+              "clip_number": 2,
+              "name": "Defecating in Mud",
+              "action": "She excreted, watching the black soil fall onto her bare legs and back.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_02.sc_01.c03",
+              "clip_number": 3,
+              "name": "Realizing Spoilage",
+              "action": "She realized that the seedlings she had planted were gone, lost to the mud, just like the feces that coated her skin.",
+              "person": true,
+              "duration_sec": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sequence_id": "sq_03",
+      "sequence_number": 3,
+      "name": "Cleansing at River",
+      "summary": "Neena washes off and bathes in the river to feel clean again.",
+      "scenes": [
+        {
+          "scene_id": "sq_03.sc_01",
+          "scene_number": 1,
+          "name": "shallow_water",
+          "summary": "Neena removes her cover completely and bathes in the cold water.",
+          "environment_name": "shallow_water",
+          "time_of_day": "morning",
+          "characters_present": [
+            "char_01"
+          ],
+          "clips": [
+            {
+              "clip_id": "sq_03.sc_01.c01",
+              "clip_number": 1,
+              "name": "Washing Saree Off",
+              "action": "She quickly went to wash the saree off at the edge of the water.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_03.sc_01.c02",
+              "clip_number": 2,
+              "name": "Removing Cover Completely",
+              "action": "The moment the last thread touched the wet air, she removed her entire cover, stripping her saree to the waist and then naked.",
+              "person": true,
+              "duration_sec": 5
+            },
+            {
+              "clip_id": "sq_03.sc_01.c03",
+              "clip_number": 3,
+              "name": "Full Body Bath",
+              "action": "Taking a full body bath in the river was her way of cleansing the earth as cold water rushed over her shoulders.",
+              "person": true,
+              "duration_sec": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "reviewed": true,
+    "notes": ""
+  }
+}
